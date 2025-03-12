@@ -11,14 +11,7 @@ O projeto modela e controla um sistema onde **três robôs autônomos** transpor
 ### Modelar o sistema de transporte de insumos
 - Representar o comportamento dos robôs usando autômatos finitos.
 - Definir estados e transições para o transporte de caixas entre o **BE** e as máquinas.
-
-### Garantir que apenas um robô tem acesso ao BE por vez
-- Restringir acesso simultâneo ao **BE**.
-- Implementar eventos de espera para evitar conflitos.
-
-### Evitar colisões entre os robôs
-- Criar regras que impeçam que os robôs acessem a mesma área simultaneamente.
-- Forçar um robô a aguardar caso outro já esteja na região crítica.
+- Garantir que o robô tem acesso ao BE.
 
 ### Implementar a especificação e gerar o supervisor
 - Modelar restrições de segurança usando autômatos de especificação.
@@ -42,25 +35,15 @@ O projeto modela e controla um sistema onde **três robôs autônomos** transpor
 - **R2:** Transporta caixas do **BE** para **M3** e **M4**.
 - **R3:** Substitui **R1** ou **R2** em caso de falha.
 
-#### Regras do BE
-- Apenas um robô pode acessar o **BE** por vez.
-- Se um robô estiver retirando um insumo, os outros devem aguardar.
-
-#### Evitar Colisões
-- Se um robô estiver no **BE**, o outro deve esperar antes de acessá-lo.
-- Implementação de eventos de espera e liberação.
-
 ## Modelagem no Supremica
 
 O sistema é modelado usando **autômatos finitos**, representando os robôs, suas restrições e o supervisor. Os eventos são divididos em **controláveis** e **não controláveis**:
 
 ### Eventos Controláveis
-- `mov(Ri, BE, Mx)`: **Ri** transporta uma caixa do **BE** para a máquina **Mx**.
-- `wait(Ri)`: **Ri** aguarda caso o **BE** esteja ocupado.
+- `move(Ri, BE, Mx)`: **Ri** transporta uma caixa do **BE** para a máquina **Mx**.
 - `unload(Ri, Mx)`: **Ri** entrega a caixa na máquina **Mx**.
 
 ### Eventos Não Controláveis
 - `request(BE, Mx)`: Nova solicitação de transporte surge.
 - `fault(Ri)`: O robô **Ri** apresenta falha.
-- `recover(Ri)`: O robô **Ri** volta a funcionar.
-- `collision_warning(BE)`: O sistema detecta risco de colisão no **BE**.
+- `reset(Ri)`: O robô **Ri** volta a funcionar.
