@@ -1,6 +1,6 @@
 # Controle de Robôs Autônomos em um Armazém - Documentação
 
-    Este repositório contém a documentação do projeto de controle supervisionado para um sistema de robôs móveis em um armazém utilizando **autômatos finitos** e a ferramenta **Supremica**.
+Este repositório contém a documentação do projeto de controle supervisionado para um sistema de robôs móveis em um armazém utilizando **autômatos finitos** e a ferramenta **Supremica**.
 
 ## Descrição Geral
 
