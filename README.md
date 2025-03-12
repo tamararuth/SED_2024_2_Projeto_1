@@ -47,3 +47,13 @@ O sistema é modelado usando **autômatos finitos**, representando os robôs, su
 - `request(BE, Mx)`: Nova solicitação de transporte surge.
 - `fault(Ri)`: O robô **Ri** apresenta falha.
 - `reset(Ri)`: O robô **Ri** volta a funcionar.
+
+## Demonstração
+
+Link de acesso ao vídeo no YouTube: 
+
+## Desenvolvedores
+
+    Mateus Figueiredo (mateus.figueiredo@ee.ufcg.edu.br)
+    Matheus Lucas     (matheuslucas.farias@ee.ufcg.edu.br)
+    Tâmara Ruth       (tamara.santos@ee.ufcg.edu.br)
