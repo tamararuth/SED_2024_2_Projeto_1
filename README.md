@@ -47,10 +47,21 @@ O sistema foi modelado com autômatos finitos, onde os robôs e máquinas têm s
 - `fault_Ri_Mi`: O robô **Ri** apresenta falha após pegar a caixa no **BE**.
 - `reset`: O robô **Ri** é consertado e volta a funcionar.
 
-### Máquinas
+### Automâtos das Máquinas
 
 ![Imagem indisponível](Automatos_Maquinas.png)
 
+### Automâtos dos Controladores das Máquinas
+
+![Imagem indisponível](Automatos_Controladores_Maquinas.png)
+
+### Automâtos dos Robôs R1 e R2
+
+![Imagem indisponível](Automatos_R1_R2.png)
+
+### Automâto do Robô R3
+
+![Imagem indisponível](Automatos_R3.png)
 
 ## Demonstração
 
