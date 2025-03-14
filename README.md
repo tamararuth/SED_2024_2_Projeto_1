@@ -50,7 +50,7 @@ O sistema foi modelado com autômatos finitos, onde os robôs e máquinas têm s
 ### Máquinas
 
 ![Imagem indisponível](Maquinas.png)
-![Imagem indisponível](Maquinas.png)
+
 
 ## Demonstração
 
