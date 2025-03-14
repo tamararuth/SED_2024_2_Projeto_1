@@ -65,7 +65,7 @@ O sistema foi modelado com autômatos finitos, onde os robôs e máquinas têm s
 
 ## Demonstração
 
-Link de acesso ao vídeo no YouTube: 
+Link de acesso ao vídeo no YouTube: https://youtu.be/8zagKujZZwg
 
 ## Desenvolvedores
 
